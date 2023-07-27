@@ -38,7 +38,7 @@ app.use(jwt.expressjwt({
 
 // app.get("/theofficechatapp"/////////);
 app.post("/register-page", authHandler.register);
-app.post("/login-page", authHandler.login);
+app.post("/login-page", authHandler.login); 
 
 app.listen(process.env.PORT, (err) => {
   if (err) {

@@ -26,7 +26,7 @@ exports.register = async (req, res) => {
       httpOnly: true,
     });
 
-    res.status(201).json({
+    res.status(200).json({
       status: "success",
       token,
       data: {
@@ -42,7 +42,7 @@ exports.register = async (req, res) => {
 exports.login = async (req, res) =>{
   try{
     const { email, password } = req.body;
-    if (!email || password) {
+    if (!email || !password) {
       return res.status(400).send("Please enter email and password");
     }
 
@@ -72,7 +72,7 @@ exports.login = async (req, res) =>{
       httpOnly: true,
     });
 
-    res.status(201).json({
+    res.status(200).json({
       status: "success",
       token,
     });
