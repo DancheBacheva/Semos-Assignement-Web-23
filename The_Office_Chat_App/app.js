@@ -5,6 +5,8 @@ const cookieParser = require("cookie-parser");
 
 const app = express();
 
+const authHandler = require("./handlers/authHandler");
+
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -30,9 +32,13 @@ app.use(jwt.expressjwt({
   },
 })
   .unless({
-    path: [],
+    path: ["/register-page", "/login-page"],
   })
 );
+
+// app.get("/theofficechatapp"/////////);
+app.post("/register-page", authHandler.register);
+app.post("/login-page", authHandler.login);
 
 app.listen(process.env.PORT, (err) => {
   if (err) {
