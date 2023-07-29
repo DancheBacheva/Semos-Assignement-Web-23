@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/global.css"/>
   <title>Register page</title>
 </head>
   <body>
-    <h3>Register</h3>
-    <h1>The Office Chat App</h1>
-    <form class="form-registerpage">
-      <label for="name"></label>
-      <input type="text" id="name" name="name" placeholder="Enter your name here"><br>
-      <label for="email"></label><input type="text" id="email" name="email" placeholder="Enter your email here"><br>
-      <label for="password"></label>
-      <input type="text" id="password" name="password" placeholder="Password"><br>
-      <button class="button-registerpage" type="submit">Register</button>
-    </form>
+    <div class="main-container">
+      <div class="smaller-container">
+        <h3 class="h3-register">Register</h3>
+        <h1 class="appname"><%= appname %></h1>
+        <form class="form-registerpage">
+          <label for="name"></label>
+          <input class="inputfield" type="text" id="name" name="name" placeholder="Enter your name here"><br>
+          <label for="email"></label>
+          <input class="inputfield" type="text" id="email" name="email" placeholder="Enter your email here"><br>
+          <label for="password"></label>
+          <input class="inputfield" type="text" id="password" name="password" placeholder="Password"><br>
+        </form>
+        <button class="button-registerpage" type="submit">Register</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -34,17 +34,19 @@ app.use(jwt.expressjwt({
   },
 })
   .unless({
-    path: ["/register-page", "/login-page", "/login"],
+    path: ["/register-page", "/login-page", "/login", "/default", "/register"],
   })
 );
 
-// app.get("/theofficechatapp"/////////);
 app.post("/register-page", authHandler.register);
 app.post("/login-page", authHandler.login);
 
 //view ruti
+app.get("/default", viewHandler.defaultpage);
 app.get("/viewposts", viewHandler.viewPosts);
 app.get("/login", viewHandler.getLoginForm);
+app.get("/register", viewHandler.getRegisterForm);
+
 
 app.listen(process.env.PORT, (err) => {
   if (err) {

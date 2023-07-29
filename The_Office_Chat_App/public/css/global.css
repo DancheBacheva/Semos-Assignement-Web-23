@@ -3,25 +3,38 @@ body{
   margin: 0 auto;
   background-color: black;
   font-family: sans-serif;
-  color: coral;
+  color: rgb(223, 69, 100);
 }
 
 .main-container{
-  width: 100%;
-  height: 800px;
+  margin: 0 auto;
+  width: 900px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(175, 247, 223);
-  border-radius: 10px;
+  background-color: rgb(191, 243, 226);
+  border-radius: 30px;
 }
 
-.appname{
+.smaller-container{
+  margin: 0 auto;
+  width: 900px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(191, 243, 226);
+  border-radius: 30px;
+}
+
+.appname, .welcome{
   margin-bottom: 100px;
 }
 
-.inputfield{
+.inputfield, .button-defaultpage{
   width: 400px;
   height: 30px;
   border-radius: 30px;
@@ -31,6 +44,88 @@ body{
   margin-bottom: 70px;
 }
 
-.button-logingpage{
-
+.button-loginpage, .button-registerpage{
+width: 100px;
+height: 30px;
+border: none;
+border-radius: 30px;
+background-color: white;
+color:  rgb(223, 69, 100);
 }
+
+/* default-page */
+.button-default{
+  color: rgb(223, 69, 100);
+  text-decoration: none;
+}
+.button-default:hover{
+  cursor: pointer;
+}
+
+/* register-page */
+.h3-register{
+  margin-top: 5px;
+  margin-bottom: 50px;
+  color: black;
+  font-size: smaller;
+}
+
+/* responsive design for all pages */
+@media screen and (max-width: 767px){
+  .main-container{
+    margin: 0 auto;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+  }
+  .smaller-container{
+    margin: 0 auto;
+    width: 270px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 243, 226);
+    border-radius: 30px;
+  }
+  .appname{
+    margin-bottom: 110px;
+    font-size: 20px;
+  }
+  .inputfield, .button-defaultpage{
+    width: 210px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    }
+  .button-loginpage{
+    margin-top: 50px;
+  }
+
+  /* default-page */
+  .welcome{
+    font-size: 15px;
+  }
+
+  .button-default{
+    color: rgb(223, 69, 100);
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* register-page */
+  .button-registerpage{
+    margin-top: 30px;
+  }
+}
+
+
