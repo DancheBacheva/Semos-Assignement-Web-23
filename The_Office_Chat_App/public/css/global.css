@@ -1,0 +1,36 @@
+/* login-page */
+body{
+  margin: 0 auto;
+  background-color: black;
+  font-family: sans-serif;
+  color: coral;
+}
+
+.main-container{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 247, 223);
+  border-radius: 10px;
+}
+
+.appname{
+  margin-bottom: 100px;
+}
+
+.inputfield{
+  width: 400px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  margin-bottom: 70px;
+}
+
+.button-logingpage{
+
+}

@@ -7,24 +7,29 @@
 </head>
   <body>
     <div >
-      <h6>The Office Chat App</h6>
+      <h6><%= appname %></h6>
       <a href=""><img src="" alt="plus"></a>
       <a href=""><img src="" alt="search"></a>
     </div>
     <a href=""><img src="" alt="man"></a>
     <h3>Welcome to news feed</h3>
     <hr>
-    <form action="">
-      <div >    
+    <form action="/createpost" method="post">
+      <div class="write-sth-container">    
         <label for="mind">What's on your mind?</label>
         <hr>
         <input type="text" name="typehere" id="typehere" placeholder="Type here...">
       </div>
     </form>
 
-    <div class="post">
-      <h4>Name</h4>
-      <p>Post</p>
-    </div>
+    <% if (posts.length ===0) { %>
+      <p>No posts</p>
+    <% } else { %> <% posts.forEach(post => {%>
+      <div class="post-container">
+        <h4><%= post.username %></h4>
+        <p><%= post.mypost %></p>
+        <p><%= post.time %></p>
+      </div>
+    <%}); %> <% } %>
   </body>
 </html>
