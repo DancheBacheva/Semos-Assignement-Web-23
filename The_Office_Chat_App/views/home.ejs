@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/global.css"/>
   <title>Home page</title>
 </head>
   <body>
-    <div >
-      <h6><%= appname %></h6>
-      <a href=""><img src="" alt="plus"></a>
-      <a href=""><img src="" alt="search"></a>
-    </div>
-    <a href=""><img src="" alt="man"></a>
-    <h3>Welcome to news feed</h3>
-    <hr>
-    <form action="/createpost" method="post">
-      <div class="write-sth-container">    
-        <label for="mind">What's on your mind?</label>
-        <hr>
-        <input type="text" name="typehere" id="typehere" placeholder="Type here...">
+    <div class="main-container-home">
+      <div class="smaller-container-home">
+        <div class="nav-container">
+          <div class="box-up"><h6 class="appname-home">The Office Chat App</h6>
+          <div class="add-search">
+          <a href=""><img src="" alt="plus"></a>
+          <a href=""><img src="" alt="search"></a></div></div>
+          <div class="box-down">
+          <a href=""><img src="" alt="myprofile"></a>
+          </div>    
+        </div>
+        
+        <h3 class="news-feed">Welcome to news feed</h3>
+        <hr class="hr1">
+        <form action="/createpost" method="POST">
+          <div class="write-sth-container">    
+            <label class="mind" for="mind">What's on your mind?</label>
+            <hr class="hr2">
+            <input class="typehere" type="text" name="typehere" id="typehere" placeholder="Type here...">
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
 
-    <% if (posts.length ===0) { %>
+    <% if (posts.length === 0) { %>
       <p>No posts</p>
     <% } else { %> <% posts.forEach(post => {%>
       <div class="post-container">
@@ -30,6 +39,6 @@
         <p><%= post.mypost %></p>
         <p><%= post.time %></p>
       </div>
-    <%}); %> <% } %>
+    <%}) %> <% }; %>
   </body>
 </html>

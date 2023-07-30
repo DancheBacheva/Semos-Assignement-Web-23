@@ -10,7 +10,7 @@ const login = async (email, password) => {
     });
 
     console.log(res);
-    window.location.href = "/home-page";
+    window.location.href = "/viewposts";
   } catch (err) {
     console.log(err);
   }

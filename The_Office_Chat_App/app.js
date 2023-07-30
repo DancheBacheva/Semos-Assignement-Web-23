@@ -7,7 +7,7 @@ const app = express();
 
 const authHandler = require("./handlers/authHandler");
 const viewHandler = require("./handlers/viewHandler");
-// const posts = require("./handlers/posts");
+const posts = require("./handlers/posts");
 
 app.set("view engine", "ejs");
 app.use(express.json());
@@ -41,11 +41,17 @@ app.use(jwt.expressjwt({
 app.post("/register-page", authHandler.register);
 app.post("/login-page", authHandler.login);
 
+app.get("/myposts", posts.getByUser);
+app.post("/createbyuser", posts.createByUser);
+
 //view ruti
 app.get("/default", viewHandler.defaultpage);
 app.get("/viewposts", viewHandler.viewPosts);
 app.get("/login", viewHandler.getLoginForm);
 app.get("/register", viewHandler.getRegisterForm);
+app.post("/createpost", viewHandler.createPost);
+app.get("/home", viewHandler.viewPosts);
+
 
 
 app.listen(process.env.PORT, (err) => {

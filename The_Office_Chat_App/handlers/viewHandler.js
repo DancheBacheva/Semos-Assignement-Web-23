@@ -33,10 +33,19 @@ exports.getRegisterForm = async (req, res) => {
 exports.viewPosts = async (req, res) => {
   try{
     const posts = await Post.find();
-    res.status(200).render("home-page", {
+    res.status(200).render("home", {
       status: "success",
       posts,
     });
+  }catch (err) {
+    res.status(500).send(err);
+  }
+};
+
+exports.createPost = async (req, res) =>{
+  try{
+    await Post.create(create.body);
+    res.redirect("/viewposts");
   }catch (err) {
     res.status(500).send(err);
   }
