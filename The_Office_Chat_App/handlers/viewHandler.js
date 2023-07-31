@@ -50,3 +50,15 @@ exports.createPost = async (req, res) =>{
     res.status(500).send(err);
   }
 };
+
+exports.myProfile = async (req, res) => {
+  try{
+    const posts = await Post.find();
+    res.status(200).render("myprofile", {
+      status: "success",
+      posts,
+    });
+  }catch (err) {
+    res.status(500).send(err);
+  }
+};

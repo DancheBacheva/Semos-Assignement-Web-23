@@ -92,12 +92,15 @@ color:  rgb(223, 69, 100);
 }
 
 .box-up{
-  margin: 0 auto;
   width: 900px;
   height: 50px;
   display: flex;
   justify-content:space-around;
   align-items: baseline;
+}
+
+.appname-home{
+  font-size: 12px;
 }
 
 .box-down{
@@ -108,7 +111,7 @@ color:  rgb(223, 69, 100);
 }
 
 .news-feed{
-  padding-right: 400px;
+  margin-left: 100px;
   color: black;
 }
 .hr1{
@@ -145,6 +148,87 @@ color:  rgb(223, 69, 100);
   height: 100px;
   background-color: white;
   border-radius: 20px;
+}
+
+/*myprofile-page*/
+.main-container-profile{
+  margin: 0 auto;
+  width: 900px;
+  height: 650px;
+  display: flex;
+  background-color: rgb(191, 243, 226);
+  border-radius: 30px;
+}
+
+.smaller-container-profile{
+  margin: 0 auto;
+  width: 900px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(191, 243, 226);
+  border-radius: 30px;
+}
+
+.img-home{
+margin: 20px 0 20px 50px;
+}
+
+.title-myprofile{
+  margin: 0 auto;
+  color: black;
+}
+
+.img-profile{
+  margin: 0 auto;
+}
+
+.myname-up{
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.mystatuses{
+  margin: 20px 0 20px 70px;
+}
+
+.mypost-container{
+  margin: 0 auto;
+  width: 780px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.myname-status{
+  margin: 20px 0 20px 30px;
+  color: black;
+}
+
+.mypost{
+  margin: 20px 0 5px 30px;
+  color: black;
+}
+
+.delete{
+  float: right;
+  margin-right: 20px;
+}
+
+.button-logout{
+  margin: 0 auto;
+  width: 400px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  color: rgb(223, 69, 100);
+  background-color: white;
+  text-decoration: none;
+}
+
+.button-logout:hover{
+  cursor: pointer;
 }
 
 /* responsive design for all pages */
@@ -205,82 +289,167 @@ color:  rgb(223, 69, 100);
   }
 
   /* responsive home-page */
-.main-container-home{
-  margin: 0 auto;
-  width: 300px;
-  height: 550px;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 30px;
-}
+  .main-container-home{
+    margin: 0 auto;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+  }
 
-.smaller-container-home{
-  margin: 0 auto;
-  width: 270px;
-  height: 520px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(191, 243, 226);
-  border-radius: 30px;
-}
+  .smaller-container-home{
+    margin: 0 auto;
+    width: 270px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(191, 243, 226);
+    border-radius: 30px;
+  }
 
-.box-up{
-  margin: 0 auto;
-  width: 300px;
-  height: 50px;
-  display: flex;
-  justify-content:space-around;
-  align-items: baseline;
-}
+  .box-up{
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: baseline;
+  }
 
-.box-down{
-  width: 260px;
-  height: 50px;
-  display: flex;
-  justify-content: end;
-}
+  .box-down{
+    width: 260px;
+    height: 20px;
+    display: flex;
+    justify-content: end;
+  }
 
-.news-feed{
-  color: black;
-  font-size: 10px;
-  margin-left: 250px ;
-}
-.hr1{
-  width: 250px;
-  height: 1px;
-  background-color: black;
-}
-.hr2{
-  width: 200px;
-  height: 1px;
-  background-color: black;
-}
+  .appname-home{
+    color: black;
+  }
 
-.write-sth-container{
-  width: 230px;
-  height: 70px;
-  background-color: white;
-  border-radius: 20px;
-}
+  .news-feed{
+    color: black;
+    font-size: 8px;
+    margin-left: 30px;
+  }
+  
+  .hr1{
+    width: 250px;
+    height: 1px;
+    background-color: black;
+  }
+  .hr2{
+    width: 200px;
+    height: 1px;
+    background-color: black;
+  }
 
-.mind{
-  font-size: smaller;
-  margin: 20px;
-  color: grey;
-}
-.typehere{
-  margin-left: 20px;
-  border: none;
-}
+  .write-sth-container{
+    width: 230px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+  }
 
-.post-container{
-  width: 230px;
-  height: 80px;
-  background-color: white;
-  border-radius: 20px;
-}
+  .mind{
+    font-size: smaller;
+    margin: 20px;
+    color: grey;
+  }
+  .typehere{
+    margin-left: 20px;
+    border: none;
+  }
+
+  .post-container{
+    width: 230px;
+    height: 80px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  /* responsive myprofile-page */
+  .main-container-profile{
+    margin: 0 auto;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+  }
+
+  .smaller-container-profile{
+    margin: 0 auto;
+    width: 270px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(191, 243, 226);
+    border-radius: 30px;
+  }
+
+  .img-home{
+    margin: 10px 0 10px 10px;
+    }
+    
+    .title-myprofile{
+      font-size: smaller;
+      margin: 0 auto;
+      color: black;
+    }
+    
+    .img-profile{
+      margin: 0 auto;
+    }
+    
+    .myname-up{
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    
+    .mystatuses{
+      margin: 20px 0 5px 30px;
+    }
+    
+    .mypost-container{
+      margin: 0 auto;
+      width: 230px;
+      height: 80px;
+      background-color: white;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .myname-status{
+      margin: 10px 0 5px 20px;
+      color: black;
+    }
+    
+    .mypost{
+      margin: 10px 0 5px 20px;
+      color: black;
+      font-size: smaller;
+    }
+    
+    .delete{
+      float: right;
+      margin-right: 20px;
+    }
+    
+    .button-logout{
+      margin: 0 auto;
+      width: 180px;
+      height: 30px;
+      border-radius: 30px;
+      border: none;
+      color: rgb(223, 69, 100);
+      background-color: white;
+      text-decoration: none;
+    }
 }
 
 

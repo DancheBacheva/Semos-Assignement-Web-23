@@ -51,6 +51,7 @@ app.get("/login", viewHandler.getLoginForm);
 app.get("/register", viewHandler.getRegisterForm);
 app.post("/createpost", viewHandler.createPost);
 app.get("/home", viewHandler.viewPosts);
+app.get("/myprofile", viewHandler.myProfile);
 
 
 
