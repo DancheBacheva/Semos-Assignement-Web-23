@@ -13,13 +13,21 @@
         <h4 class="title-myprofile">My profile</h4>
         <hr class="hr1">
         <img class="img-profile" src="" alt="myimage">
-        <h3 class="myname-up">My name</h3>
+        <h3 class="myname-up"><%= myname %></h3>
         <h5 class="mystatuses">My statuses:</h4>
-        <div class="mypost-container">
-          <h6 class="myname-status">MyName</h6>
-          <p class="mypost">MyPost</p>
-          <a href="" class="delete"><img src="" alt="delete"></a>
-        </div>
+      
+          <% if (posts.length === 0) { %>
+            <p>No posts</p>
+          <% } else { %> <% posts.forEach(post => {%>
+            <div class="mypost-container">
+              <a href="/viewposts/<%=post._id%>"></a>
+              <h4 class="username"><%= myname %></h4>
+              <p class="mypost"><%= post.mypost %></p>
+              <p class="time"><%= post.time %></p>
+              <a href="/deletePost/<%= post._id %>" class="delete"><img src="" alt="delete"></a>
+            </div>
+          <%}) %> <% }; %>
+
         <button class="button-logout" type="submit">Log out</button>
       </div>
     </div>

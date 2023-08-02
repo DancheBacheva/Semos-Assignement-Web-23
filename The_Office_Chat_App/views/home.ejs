@@ -28,19 +28,21 @@
             <label class="mind" for="mind">What's on your mind?</label>
             <hr class="hr2">
             <input class="typehere" type="text" name="typehere" id="typehere" placeholder="Type here...">
+            <button class="button-post" type="submit">Post</button>
           </div>
         </form>
+
+        <% if (posts.length === 0) { %>
+          <p>No posts</p>
+        <% } else { %> <% posts.forEach(post => {%>
+          <div class="post-container">
+            <a href="/viewposts/<%=post._id%>"></a>
+            <h4 class="username"><%= post.username %></h4>
+            <p class="mypost"><%= post.mypost %></p>
+            <p class="time"><%= post.time %></p>
+          </div>
+        <%}) %> <% }; %>
       </div>
     </div>
-
-    <% if (posts.length === 0) { %>
-      <p>No posts</p>
-    <% } else { %> <% posts.forEach(post => {%>
-      <div class="post-container">
-        <h4><%= post.username %></h4>
-        <p><%= post.mypost %></p>
-        <p><%= post.time %></p>
-      </div>
-    <%}) %> <% }; %>
   </body>
 </html>

@@ -44,10 +44,20 @@ exports.viewPosts = async (req, res) => {
 
 exports.createPost = async (req, res) =>{
   try{
-    await Post.create(create.body);
+    await Post.create(req.body);
     res.redirect("/viewposts");
   }catch (err) {
     res.status(500).send(err);
+  }
+};
+
+exports.deletePost = async (req, res) => {
+  try{
+    const postId = req.params.id;
+    await Post.findByIdAndDelete(postId);
+    res.redirect("/myprofile");
+  }catch (error) {
+    res.status(500).send(error);
   }
 };
 
@@ -56,6 +66,7 @@ exports.myProfile = async (req, res) => {
     const posts = await Post.find();
     res.status(200).render("myprofile", {
       status: "success",
+      myname: "Danche Bacheva",
       posts,
     });
   }catch (err) {

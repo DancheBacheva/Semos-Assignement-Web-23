@@ -41,6 +41,10 @@ app.use(jwt.expressjwt({
 app.post("/register-page", authHandler.register);
 app.post("/login-page", authHandler.login);
 
+app.get("/posts", posts.getAll);
+app.get("/posts/:id", posts.getOne);
+app.post("/posts", posts.create);
+
 app.get("/myposts", posts.getByUser);
 app.post("/createbyuser", posts.createByUser);
 
@@ -50,10 +54,9 @@ app.get("/viewposts", viewHandler.viewPosts);
 app.get("/login", viewHandler.getLoginForm);
 app.get("/register", viewHandler.getRegisterForm);
 app.post("/createpost", viewHandler.createPost);
+app.get("/deletePost/:id", viewHandler.deletePost);
 app.get("/home", viewHandler.viewPosts);
 app.get("/myprofile", viewHandler.myProfile);
-
-
 
 app.listen(process.env.PORT, (err) => {
   if (err) {

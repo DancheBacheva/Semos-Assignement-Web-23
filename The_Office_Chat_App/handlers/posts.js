@@ -34,6 +34,23 @@ exports.getOne = async (req, res) => {
       }
     };
 
+exports.create = async (req, res) => {
+  try{
+    const newPost = await Post.create(req.body);
+    res.status(201).json({
+      status: "success",
+      data:{
+        post: newPost,
+      },
+    });
+  }catch (err) {
+    res.status(500).json({
+      status: "fail",
+      message: err,
+    });
+  }
+};
+
     exports.createByUser = async (req, res, next) => {
       try {
         const userId = req.auth.id;

@@ -74,7 +74,7 @@ color:  rgb(223, 69, 100);
 .main-container-home{
   margin: 0 auto;
   width: 900px;
-  height: 650px;
+  height: 100%;
   display: flex;
   background-color: rgb(191, 243, 226);
   border-radius: 30px;
@@ -83,7 +83,7 @@ color:  rgb(223, 69, 100);
 .smaller-container-home{
   margin: 0 auto;
   width: 900px;
-  height: 650px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,14 +120,14 @@ color:  rgb(223, 69, 100);
   background-color: grey;
 }
 .hr2{
-  width: 600px;
+  width: 700px;
   height: 1px;
   background-color: black;
 }
 
 .write-sth-container{
   margin: 15px;
-  width: 700px;
+  width: 780px;
   height: 100px;
   background-color: white;
   border-radius: 10px;
@@ -143,18 +143,46 @@ color:  rgb(223, 69, 100);
   border: none;
 }
 
+.button-post{
+  background-color: white;
+  color: grey;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 50px;
+}
+
+.button-post:hover{
+  cursor: pointer;
+}
+
 .post-container{
-  width: 700px;
-  height: 100px;
+  width: 780px;
+  height: 130px;
   background-color: white;
   border-radius: 20px;
+  margin: 20px 0;
 }
+
+.username{
+  margin: 10px 0 0 30px;
+  color: black;
+}
+
+.mypost{
+  margin: 10px 0 5px 30px;
+  color: black;
+}
+
+.time{
+  margin: 10px 0 5px 30px;
+  color: black;
+}
+
 
 /*myprofile-page*/
 .main-container-profile{
   margin: 0 auto;
   width: 900px;
-  height: 650px;
+  height: 100%;
   display: flex;
   background-color: rgb(191, 243, 226);
   border-radius: 30px;
@@ -163,7 +191,7 @@ color:  rgb(223, 69, 100);
 .smaller-container-profile{
   margin: 0 auto;
   width: 900px;
-  height: 650px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgb(191, 243, 226);
@@ -195,21 +223,22 @@ margin: 20px 0 20px 50px;
 .mypost-container{
   margin: 0 auto;
   width: 780px;
-  height: 100px;
+  height: 130px;
   background-color: white;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30x;
 }
 
-.myname-status{
+/* .myname-status{
   margin: 20px 0 20px 30px;
   color: black;
-}
+} */
 
-.mypost{
+/* .mypost{
   margin: 20px 0 5px 30px;
   color: black;
-}
+} */
 
 .delete{
   float: right;
