@@ -34,20 +34,18 @@ exports.getOne = async (req, res) => {
       }
     };
 
-exports.create = async (req, res) => {
-  try{
-    const newPost = await Post.create(req.body);
-    res.status(201).json({
-      status: "success",
-      data:{
-        post: newPost,
-      },
+exports.create = async (req, res, next) => {
+  try {
+    const userId = req.auth.id;
+    const post = await Post.create({
+      username: req.body.username,
+      mypost: req.body.mypost,
+      time: req.body.time,
+      author: userId,
     });
-  }catch (err) {
-    res.status(500).json({
-      status: "fail",
-      message: err,
-    });
+    res.status(201).json(post);
+  } catch (err) {
+    res.status(500).json({ error: err });
   }
 };
 
