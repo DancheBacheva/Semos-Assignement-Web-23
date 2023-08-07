@@ -9,7 +9,7 @@
   <body>
     <div class="main-container-profile">
       <div class="smaller-container-profile">
-        <a class="img-home" href="/home"><img src="" alt="home"></a>
+        <a class="img-home" href="/viewposts"><img src="" alt="home"></a>
         <h4 class="title-myprofile">My profile</h4>
         <hr class="hr1">
         <img class="img-profile" src="" alt="myimage">
@@ -21,14 +21,14 @@
           <% } else { %> <% posts.forEach(post => {%>
             <div class="mypost-container">
               <a href="/viewposts/<%=post._id%>"></a>
-              <h4 class="username"><%= myname %></h4>
+              <h4 class="username"><%= post.username %></h4>
               <p class="mypost"><%= post.mypost %></p>
               <p class="time"><%= post.time %></p>
               <a href="/deletePost/<%= post._id %>" class="delete"><img src="" alt="delete"></a>
             </div>
           <%}) %> <% }; %>
 
-        <button class="button-logout" type="submit">Log out</button>
+        <button class="button-logout"  type="submit"><a class="logout" href="/default">Log out</a></button>
       </div>
     </div>
   </body>

@@ -33,6 +33,7 @@ exports.getRegisterForm = async (req, res) => {
 exports.viewPosts = async (req, res) => {
   try{
     const posts = await Post.find();
+    console.log(posts);
     res.status(200).render("home", {
       status: "success",
       posts,

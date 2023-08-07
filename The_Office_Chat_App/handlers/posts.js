@@ -51,6 +51,26 @@ exports.create = async (req, res) => {
   }
 };
 
+exports.update = async (req, res) => {
+  try {
+    const post = await Post.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+    res.status(200).json({
+      status: "success",
+      data: {
+        post,
+      },
+    });
+  } catch (err) {
+    res.status(404).json({
+      status: "fail",
+      message: err,
+    });
+  }
+};
+
     exports.createByUser = async (req, res, next) => {
       try {
         const userId = req.auth.id;

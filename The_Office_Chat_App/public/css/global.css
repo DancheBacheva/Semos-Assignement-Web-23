@@ -51,6 +51,7 @@ border: none;
 border-radius: 30px;
 background-color: white;
 color:  rgb(223, 69, 100);
+margin-left: 150px;
 }
 
 /* default-page */
@@ -230,16 +231,6 @@ margin: 20px 0 20px 50px;
   margin-top: 30x;
 }
 
-/* .myname-status{
-  margin: 20px 0 20px 30px;
-  color: black;
-} */
-
-/* .mypost{
-  margin: 20px 0 5px 30px;
-  color: black;
-} */
-
 .delete{
   float: right;
   margin-right: 20px;
@@ -254,10 +245,17 @@ margin: 20px 0 20px 50px;
   color: rgb(223, 69, 100);
   background-color: white;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .button-logout:hover{
   cursor: pointer;
+}
+
+.logout{
+  color: rgb(223, 69, 100);
+  text-decoration: none;
+  font-size: 12px;
 }
 
 /* responsive design for all pages */
@@ -297,8 +295,10 @@ margin: 20px 0 20px 50px;
     padding-left: 20px;
     margin-bottom: 20px;
     }
+
   .button-loginpage{
     margin-top: 50px;
+    margin-left: 75px;
   }
 
   /* responsive default-page */
@@ -315,13 +315,14 @@ margin: 20px 0 20px 50px;
   /* responsive register-page */
   .button-registerpage{
     margin-top: 30px;
+    margin-left: 75px;
   }
 
   /* responsive home-page */
   .main-container-home{
     margin: 0 auto;
     width: 300px;
-    height: 550px;
+    height: 100%;
     display: flex;
     align-items: center;
     background-color: white;
@@ -331,12 +332,14 @@ margin: 20px 0 20px 50px;
   .smaller-container-home{
     margin: 0 auto;
     width: 270px;
-    height: 520px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(191, 243, 226);
     border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .box-up{
@@ -385,7 +388,7 @@ margin: 20px 0 20px 50px;
 
   .mind{
     font-size: smaller;
-    margin: 20px;
+    margin-left: 20px;
     color: grey;
   }
   .typehere{
@@ -395,16 +398,34 @@ margin: 20px 0 20px 50px;
 
   .post-container{
     width: 230px;
-    height: 80px;
+    height: 100px;
     background-color: white;
     border-radius: 20px;
+  }
+
+  .username{
+    font-size: 10px;
+    margin: 10px 0 0 10px;
+    color: black;
+  }
+  
+  .mypost{
+    font-size: 8px;
+    margin: 10px 0 5px 10px;
+    color: black;
+  }
+  
+  .time{
+    font-size: 8px;
+    margin: 10px 0 5px 10px;
+    color: black;
   }
 
   /* responsive myprofile-page */
   .main-container-profile{
     margin: 0 auto;
     width: 300px;
-    height: 550px;
+    height: 100%;
     display: flex;
     align-items: center;
     background-color: white;
@@ -414,11 +435,13 @@ margin: 20px 0 20px 50px;
   .smaller-container-profile{
     margin: 0 auto;
     width: 270px;
-    height: 520px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgb(191, 243, 226);
     border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .img-home{
@@ -447,26 +470,22 @@ margin: 20px 0 20px 50px;
     .mypost-container{
       margin: 0 auto;
       width: 230px;
-      height: 80px;
+      height: 100px;
       background-color: white;
       border-radius: 20px;
       margin-bottom: 20px;
     }
     
     .myname-status{
-      margin: 10px 0 5px 20px;
+      font-size: 8px;
+      margin: 10px 0 5px 10px;
       color: black;
     }
-    
-    .mypost{
-      margin: 10px 0 5px 20px;
-      color: black;
-      font-size: smaller;
-    }
-    
+        
     .delete{
       float: right;
       margin-right: 20px;
+      font-size: 8px;
     }
     
     .button-logout{
@@ -478,6 +497,7 @@ margin: 20px 0 20px 50px;
       color: rgb(223, 69, 100);
       background-color: white;
       text-decoration: none;
+      margin-bottom: 20px;
     }
 }
 
