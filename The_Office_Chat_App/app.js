@@ -57,6 +57,8 @@ app.get("/register", viewHandler.getRegisterForm);
 app.post("/createpost", viewHandler.createPost);
 app.get("/deletePost/:id", viewHandler.deletePost);
 app.get("/myprofile", viewHandler.myProfile);
+app.get("/viewposts/:id", viewHandler.viewPostDetails);
+app.post("/editpost/:id", viewHandler.editPost);
 
 app.listen(process.env.PORT, (err) => {
   if (err) {

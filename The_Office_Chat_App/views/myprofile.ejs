@@ -10,7 +10,7 @@
     <div class="main-container-profile">
       <div class="smaller-container-profile">
         <a class="img-home" href="/viewposts"><img src="" alt="home"></a>
-        <h4 class="title-myprofile">My profile</h4>
+        <h4 class="title-myprofile"><%= title %></h4>
         <hr class="hr1">
         <img class="img-profile" src="" alt="myimage">
         <h3 class="myname-up"><%= myname %></h3>
@@ -24,6 +24,8 @@
               <h4 class="username"><%= post.username %></h4>
               <p class="mypost"><%= post.mypost %></p>
               <p class="time"><%= post.time %></p>
+
+              <a href="/viewposts/<%= post._id %>" class="edit"><img src="" alt="edit"></a>
               <a href="/deletePost/<%= post._id %>" class="delete"><img src="" alt="delete"></a>
             </div>
           <%}) %> <% }; %>

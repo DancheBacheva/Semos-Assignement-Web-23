@@ -72,14 +72,41 @@ exports.deletePost = async (req, res) => {
 exports.myProfile = async (req, res) => {
   try{
     const userId = req.auth.id;
-    const posts = await Post.find();
+    const posts = await Post.find({ author: userId });
     res.status(200).render("myprofile", {
       status: "success",
+      title: "My profile",
       myname: "Danche Bacheva",
-      author: userId,
       posts,
     });
   }catch (err) {
+    res.status(500).send(err);
+  }
+};
+
+exports.viewPostDetails = async (req, res) => {
+  try {
+    const post = await Post.findById(req.params.id);
+    if (!post) {
+      res.status(404).send("Post not found.");
+    } else {
+      res.status(200).render("postdetails", {
+        status: "success",
+        title: "Edit post",
+        post,
+      });
+    }
+  } catch (err) {
+    res.status(500).send(err);
+  }
+};
+
+exports.editPost = async (req, res) => {
+  try {
+    await Movie.findByIdAndUpdate(req.params.id, req.body);
+
+    res.redirect("/viewposts/" + req.params.id);
+  } catch (err) {
     res.status(500).send(err);
   }
 };

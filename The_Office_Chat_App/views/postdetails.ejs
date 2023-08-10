@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/global.css"/>
+  <title>Post details</title>
+</head>
+<body>
+  <div class="main-container-profile">
+    <div class="smaller-container-profile">
+      <a class="img-home" href="/viewposts"><img src="" alt="home"></a>
+      <h4 class="title-myprofile"><%= title %></h4>
+      <hr class="hr1">
+      <div class="mypost-container">
+        <form action="/editpost/<%= post._id %>" method="POST">
+          <label for="username">Username:</label><br>
+          <input class="username" type="text" id="username" name="username" value="<%= post.username %>" /><br>
+          <label for="mypost">My post:</label><br>
+          <input class="mypost" type="text" id="mypost" name="mypost" value="<%= post.mypost %>" /><br>
+          <label for="time">Time:</label><br>
+          <input class="time" type="text" id="time" name="time" value="<%= post.time %>" /><br>
+          <button class="button-logout" type="submit">Edit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

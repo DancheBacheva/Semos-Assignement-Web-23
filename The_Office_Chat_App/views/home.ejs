@@ -36,8 +36,8 @@
           <p>No posts</p>
         <% } else { %> <% posts.forEach(post => {%>
           <div class="post-container">
-            <a href="/viewposts/<%= post._id %>">
-            <h4 class="username"><%= post.username %> </h4></a>
+            <a href="/viewposts/<%= post._id %>"></a>
+            <h4 class="username"><%= post.username %> </h4>
             <p class="mypost"><%= post.mypost %></p>
             <p class="time"><%= post.time %></p>
           </div>
