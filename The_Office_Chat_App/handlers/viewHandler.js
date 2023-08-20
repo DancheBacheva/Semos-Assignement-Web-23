@@ -48,7 +48,7 @@ exports.createPost = async (req, res, next) => {
   try {
     const userId = req.auth.id;
     await Post.create({
-      username: req.body.username,
+      username: req.auth.name,
       mypost: req.body.mypost,
       time: req.body.time,
       author: userId,
@@ -72,11 +72,12 @@ exports.deletePost = async (req, res) => {
 exports.myProfile = async (req, res) => {
   try{
     const userId = req.auth.id;
+    const authorName = req.auth.name;
     const posts = await Post.find({ author: userId });
     res.status(200).render("myprofile", {
       status: "success",
       title: "My profile",
-      myname: "Danche",
+      myname: authorName,
       posts,
     });
   }catch (err) {
