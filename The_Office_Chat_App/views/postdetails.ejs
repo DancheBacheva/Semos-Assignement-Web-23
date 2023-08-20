@@ -7,20 +7,20 @@
   <title>Post details</title>
 </head>
 <body>
-  <div class="main-container-profile">
-    <div class="smaller-container-profile">
+  <div class="main-container-edit">
+    <div class="smaller-container-edit">
       <a class="img-home" href="/viewposts"><img src="" alt="home"></a>
       <h4 class="title-myprofile"><%= title %></h4>
-      <hr class="hr1">
-      <div class="mypost-container">
+      <hr class="hr-edit">
+      <div class="edit-container">
         <form action="/editpost/<%= post._id %>" method="POST">
-          <label for="username">Username:</label><br>
-          <input class="username" type="text" id="username" name="username" value="<%= post.username %>" /><br>
-          <label for="mypost">My post:</label><br>
-          <input class="mypost" type="text" id="mypost" name="mypost" value="<%= post.mypost %>" /><br>
-          <label for="time">Time:</label><br>
-          <input class="time" type="text" id="time" name="time" value="<%= post.time %>" /><br>
-          <button class="button-logout" type="submit">Edit</button>
+          <label class="edit-text" for="username">Username:</label><br>
+          <input class="username-edit" type="text" id="username" name="username" value="<%= post.username %>" /><br>
+          <label class="edit-text" for="mypost">My post:</label><br>
+          <input class="mypost-edit" type="text" id="mypost" name="mypost" value="<%= post.mypost %>" /><br>
+          <label class="edit-text" for="time">Time:</label><br>
+          <input class="time-edit" type="text" id="time" name="time" value="<%= post.time %>" /><br>
+          <button class="editButton" type="submit" ><a class="edit-button-link" href="/myprofile">Edit</a></button>
         </form>
       </div>
     </div>

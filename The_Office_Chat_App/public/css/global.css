@@ -263,6 +263,82 @@ margin: 20px 0 20px 50px;
   font-size: 12px;
 }
 
+/*postdetails page */
+.main-container-edit{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 900px;
+  height: 300px;
+  display: flex;
+  background-color: rgb(191, 243, 226);
+  border-radius: 30px;
+}
+
+.hr-edit{
+  width: 800px;
+  height: 3px;
+  background-color: grey;
+}
+
+.smaller-container-edit{
+  margin: 0 auto;
+  width: 900px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(191, 243, 226);
+  border-radius: 30px;
+}
+
+.edit-container{
+  margin: 0 auto;
+  width: 700px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.edit-text{
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.username-edit, .mypost-edit, .time-edit{
+  margin: 10px 20px 10px 40px;
+  width: 600px;
+  height: 20px;
+  border-color:rgb(223, 69, 100);
+  border-radius: 10px;
+}
+
+.editButton{
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  color: rgb(223, 69, 100);
+  background-color: rgb(191, 243, 226);
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  margin-left: 300px;
+}
+
+.editButton:hover{
+  cursor: pointer;
+}
+
+.edit-button-link{
+  color: rgb(223, 69, 100);
+  text-decoration: none;
+}
+
+
+
+
 /* responsive design for all pages */
 @media screen and (max-width: 767px){
   .main-container{
@@ -509,6 +585,60 @@ margin: 20px 0 20px 50px;
       text-decoration: none;
       margin-bottom: 20px;
     }
-}
 
+    /* responsive edit-page */
+    .main-container-edit{
+      margin: 0 auto;
+      width: 300px;
+      height: 550px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 30px;
+    }
+    
+    .smaller-container-edit{
+      margin: 0 auto;
+      width: 270px;
+      height: 520px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(191, 243, 226);
+      border-radius: 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .hr-edit{
+      width: 200px;
+    }
+    
+    .edit-container{
+      margin: 0 auto;
+      width: 230px;
+      height: 300px;
+      background-color: white;
+      border-radius: 20px;
+      margin-top: 20px;
+      padding-top: 50px;
+      width: 230px;
+    }
+
+    .username-edit, .mypost-edit, .time-edit{
+      margin: 10px 20px 10px 40px;
+      width: 150px;
+      height: 20px;
+      border-color:rgb(223, 69, 100);
+      border-radius: 10px;
+    }
+
+    .editButton{
+      margin-left: 70px;
+    }
+
+    .edit-button-link{
+      color: rgb(223, 69, 100);
+      text-decoration: none;
+    }
+}
 

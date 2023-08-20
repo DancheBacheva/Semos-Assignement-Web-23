@@ -76,7 +76,7 @@ exports.myProfile = async (req, res) => {
     res.status(200).render("myprofile", {
       status: "success",
       title: "My profile",
-      myname: "Danche Bacheva",
+      myname: "Danche",
       posts,
     });
   }catch (err) {
@@ -103,8 +103,7 @@ exports.viewPostDetails = async (req, res) => {
 
 exports.editPost = async (req, res) => {
   try {
-    await Movie.findByIdAndUpdate(req.params.id, req.body);
-
+    await Post.findByIdAndUpdate(req.params.id, req.body);
     res.redirect("/viewposts/" + req.params.id);
   } catch (err) {
     res.status(500).send(err);
