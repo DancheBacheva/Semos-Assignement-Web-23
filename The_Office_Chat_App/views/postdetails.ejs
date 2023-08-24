@@ -14,12 +14,9 @@
       <hr class="hr-edit">
       <div class="edit-container">
         <form action="/editpost/<%= post._id %>" method="POST">
-          <label class="edit-text" for="username">Username:</label><br>
-          <input class="username-edit" type="text" id="username" name="username" value="<%= post.username %>" /><br>
-          <label class="edit-text" for="mypost">My post:</label><br>
+          <label class="edit-text" for="username"><%= post.username %></label><br><br><br>
+          <label class="edit-text" for="mypost">Edit post:</label><br>
           <input class="mypost-edit" type="text" id="mypost" name="mypost" value="<%= post.mypost %>" /><br>
-          <label class="edit-text" for="time">Time:</label><br>
-          <input class="time-edit" type="text" id="time" name="time" value="<%= post.time %>" /><br>
           <button class="editButton" type="submit" ><a class="edit-button-link" href="/myprofile">Edit</a></button>
         </form>
       </div>

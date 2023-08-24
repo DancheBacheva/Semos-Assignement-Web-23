@@ -9,10 +9,10 @@
   <body>
     <div class="main-container-profile">
       <div class="smaller-container-profile">
-        <a class="img-home" href="/viewposts"><img src="" alt="home"></a>
+        <a class="img-home" href="/viewposts"><img src="/images/logos/home-logo.png" alt="home" width="40" height="30"></a>
         <h4 class="title-myprofile"><%= title %></h4>
         <hr class="hr1">
-        <img class="img-profile" src="" alt="myimage">
+        <img class="img-profile" src="/images/logos/ppwoman-logo.jpg" alt="myimage" width="60" height="60">
         <h3 class="myname-up"><%= myname %></h3>
         <h5 class="mystatuses">My statuses:</h4>
       
@@ -21,12 +21,15 @@
           <% } else { %> <% posts.forEach(post => {%>
             <div class="mypost-container">
               <a href="/viewposts/<%=post._id%>"></a>
-              <h4 class="username"><%= post.username %></h4>
+              <div class="pp-name">
+                <img src="/images/logos/ppwoman-logo.jpg" alt=""width="20" height="20">
+                <h4 class="username"><%= post.username %></h4>
+              </div>              
               <p class="mypost"><%= post.mypost %></p>
               <p class="time"><%= post.time %></p>
 
-              <a href="/viewposts/<%= post._id %>" class="edit"><img src="" alt="edit"></a>
-              <a href="/deletePost/<%= post._id %>" class="delete"><img src="" alt="delete"></a>
+              <a href="/viewposts/<%= post._id %>" class="edit"><img src="/images/logos/edit-logo.png" alt="edit" width="20" height="20"></a>
+              <a href="/deletePost/<%= post._id %>" class="delete"><img src="/images/logos/delete.png" alt="delete" width="20" height="25"></a>
             </div>
           <%}) %> <% }; %>
 
