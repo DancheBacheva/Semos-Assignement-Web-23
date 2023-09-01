@@ -40,11 +40,13 @@ app.use(jwt.expressjwt({
 
 app.post("/register-page", authHandler.register);
 app.post("/login-page", authHandler.login);
+// app.patch("/login-page/:id", authHandler.uploadProfilePicture, authHandler.updateUser); //da se proveri
 
 app.get("/posts", posts.getAll);
 app.get("/posts/:id", posts.getOne);
 app.post("/posts", posts.create);
 app.patch("/posts/:id", posts.update);
+
 
 app.get("/myposts", posts.getByUser);
 app.post("/createbyuser", posts.createByUser);

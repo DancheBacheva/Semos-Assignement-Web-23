@@ -24,6 +24,11 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: [true, "You must enter a password"],
+  },
+
+  profilepicture: {
+    type: String,
+    default: "defaultpp.png" 
   }
 });
 

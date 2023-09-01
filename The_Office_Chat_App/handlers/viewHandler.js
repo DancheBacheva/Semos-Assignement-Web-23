@@ -73,11 +73,13 @@ exports.myProfile = async (req, res) => {
   try{
     const userId = req.auth.id;
     const authorName = req.auth.name;
+    // const picture = req.auth.profilepicture;
     const posts = await Post.find({ author: userId });
     res.status(200).render("myprofile", {
       status: "success",
       title: "My profile",
       myname: authorName,
+      // profilepicture: picture,
       posts,
     });
   }catch (err) {

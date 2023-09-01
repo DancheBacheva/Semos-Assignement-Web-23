@@ -52,8 +52,8 @@ exports.create = async (req, res, next) => {
 exports.update = async (req, res) => {
   try {
     const post = await Post.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true,
+    new: true,
+    runValidators: true,
     });
     res.status(200).json({
       status: "success",
