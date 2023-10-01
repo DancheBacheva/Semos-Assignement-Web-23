@@ -1,8 +1,7 @@
 # Semos-Assignement-Web-23
-The Office Chat App
-The Office Chat App е социјална мрежа која е наменета за дружење и размена на информации
+The Office Chat App  - социјална мрежа која е наменета за дружење и размена на информации
 
-![deafault2](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/80b0da59-9308-4ea4-b04a-d12d8bd2e5ef)![Login2](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/1217a610-f1f7-4ed9-ac24-91bf3fb6f21c)![Register2](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/979bbb0f-c94b-45e5-8329-7f17f39efefb)
+![Default](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/972b7877-8782-48c5-aa91-b3e38edf76aa)![Login](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/7e26426c-e2ea-49e2-bbe7-8f8cf3225e7a)![Register](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/050ff874-f493-45cc-b352-e000912801d2)
 ![HomePage](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/b8164f29-b7b2-4b18-ae78-092e4f10b719)
 ![MyProfile](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/bfe0ceed-bf4f-49f2-8825-9b311d5facc2)
 ![edit](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/98d8a4f6-a37a-4b8c-89e0-faf9b2a3fec3)
