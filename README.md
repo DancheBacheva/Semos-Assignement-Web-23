@@ -2,6 +2,17 @@
 The Office Chat App
 The Office Chat App е социјална мрежа која е наменета за дружење и размена на информации
 
+![default](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/11766a52-e765-43d0-814d-892aa78755b7) ![Login](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/3b41770a-58ec-495d-9ce7-c1ad0ea8d2fd) ![Register](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/bdb39de0-c02b-4c95-81aa-dc70081b2fbe)
+
+![Homepage](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/fa1b7dd5-ece6-4ad9-8011-027a10324716)
+
+![MyProfile](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/ef4e0597-089a-4425-b973-0e604ee69855)
+
+![PostDetails](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/bbe9e1c2-86fd-4203-b007-0f9a939f873f)
+
+
+
+
 
 
 Страни (views) на апликацијата
