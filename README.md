@@ -1,41 +1,26 @@
 # Semos-Assignement-Web-23
-The Office Chat App  - социјална мрежа која е наменета за дружење и размена на информации
+The Office Chat App  - a social network designed for socializing and information sharing.
 
 ![Default](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/972b7877-8782-48c5-aa91-b3e38edf76aa)![Login](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/7e26426c-e2ea-49e2-bbe7-8f8cf3225e7a)![Register](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/050ff874-f493-45cc-b352-e000912801d2)
 ![HomePage](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/b8164f29-b7b2-4b18-ae78-092e4f10b719)
 ![MyProfile](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/bfe0ceed-bf4f-49f2-8825-9b311d5facc2)
 ![edit](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/98d8a4f6-a37a-4b8c-89e0-faf9b2a3fec3)
 
-Страни (views) на апликацијата
-Апликацијата се состои од следните страни:
+The Office Chat App is a web application that allows users to interact through posts. It has a variety of features accessible through different pages:
 
-1. Главна страница (Default page): На оваа страница, корисниците може да изберат дали сакаат да се најават (Login) или да креираат нова корисничка сметка (Register).
-2. Страница за најава (Login-page): Корисниците можат да се најават со своите постоечки креденцијали. Тука ќе треба да внесат својот кориснички е-маил и лозинка.
-3. Страница за регистрација (Register-page): На оваа страница, новите корисници можат да креираат своја корисничка сметка. При регистрацијата, потребно е да се внесат потребните информации, како име, е-маил и лозинка.
-4. Домашна страница (Home-page): Оваа страница е достапна само за логирани корисници. На неа, корисниците можат да креираат нови постови и да ги разгледуваат постовите кои ги објавиле другите корисници.
-5. Профил страница (Myprofile-page): На оваа страница, логираниот корисник може да ги види своите постови, како и да ги брише ако сака. Исто така, има можност да се одјави од апликацијата.
+Default Page: Users can choose to log in or register.
+Login Page: Existing users can log in with their email and password.
+Register Page: New users can create an account by providing their name, email, and password.
+Home Page: Accessible only to logged-in users, it allows them to create and view posts by others.
+Profile Page: Users can view and delete their own posts, with the option to log out. They can also edit their posts here.
+Development Tools and Technologies:
+The app is built using Node.js, MongoDB, and Express.js. It employs Express middleware for JWT and file uploads, along with libraries for bcrypt, data validation, and EJS for templating.
 
-Начин на изработка
-При изработка на апликацијата се корисени следниве алатки/технологии.
+Application Services:
+The server-side application is structured with distinct services, including authorization, user management, events, and file handling.
 
-● Node.js
-● MongoDB
-● Express.js
-● Express middleware за jwt, file upload
-● Node.js библиотека за работа со bcrypt, валидација на податоци, работа со MongoDB
-● EJS – Embedded JavaScript Templating.
+Additional Features:
 
-Серверската апликација е составена од следниве посебни сервиси:
-
-● Серверска апликација изработена во Node.js/MongoDB
-● Сервис за авторизација (auth)
-● Сервис за менаџирање на корисници (users)
-● Сервис за настани (events)
-● Сервис за работа со фајлови (upload)
-
-Логираниот корисник на Office Chat App има можност да го едитира својот сопствен пост на страницата за профил.
-- Едитирај го својот пост (Edit post): Кога логираниот корисник ќе пристапи на својата профилна страница, има опција да ја уредува својата објавена содржина. Кликнувајќи на опцијата "edit" на својот пост, ќе му се отвори специјален прозорец за уредување каде што ќе може да ги промени деталите на својата објава
-
-На Office Chat App, секој пост го прикажува времето кога е креиран.
-
-- Прикажување на времето на креирање на постот (Post creation time): Кога корисникот ќе објави нов пост на Домашната страница, се прикажува точното време кога постот е креиран. Оваа информација е видлива за сите корисници кои го гледаат постот.
+Users can edit their posts through a special edit window.
+Each post displays the exact creation time, visible to all users.
+Overall, the app provides a simple platform for communication through posts, with a focus on user interaction and security.
