@@ -1,4 +1,4 @@
-# Semos-Assignement-Web-23
+# The Office Chat App
 The Office Chat App  - a social network designed for socializing and information sharing.
 
 ![Default](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/972b7877-8782-48c5-aa91-b3e38edf76aa)![Login](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/7e26426c-e2ea-49e2-bbe7-8f8cf3225e7a)![Register](https://github.com/DancheBacheva/Semos-Assignement-Web-23/assets/128419533/050ff874-f493-45cc-b352-e000912801d2)
